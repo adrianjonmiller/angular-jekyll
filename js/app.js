@@ -3,8 +3,7 @@ var app = angular.module( 'app', [
 	'ui.router',
 	'app.controllers',
 	'app.filters',
-	'app.directives',
-	'angularUtils.directives.dirPagination'
+	'app.directives'
 	], function($interpolateProvider) {
 	  $interpolateProvider.startSymbol('[[');
 	  $interpolateProvider.endSymbol(']]');
