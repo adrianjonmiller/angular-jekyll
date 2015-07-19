@@ -1,19 +1,20 @@
 #header {
-	background: $c-gray;
+	background: $c-theme-white;
 	z-index: 1000;
 }
 
 #logo {
-	color: #fff;
-
+	color: $c-theme-black;
+	font-weight: 600;
 	height: 3rem;
 	line-height: 3rem;
 	text-decoration: none;
 }
 
 #footer {
-	background: lightgray;
+	background: $c-light-tan;
 	padding: 30px;
+	display: none;
 }
 
 .unstyle {
@@ -59,23 +60,23 @@
 		display: block;
 		line-height: 3rem;
 		height: 3rem;
-		background: $c-gray;
+		background: $c-theme-white;
 		text-align: center;
-		color: #fff;
+		color: $c-theme-black;
 		text-decoration: none;
-		font-weight: bold;
-		text-transform: uppercase;
+		font-weight: 300;
+		text-transform: lowercase;
 		letter-spacing: .1em;
-		border-left: solid thin darken($c-gray, 10%);
+		border-left: solid 0px $c-light-tan;
 		&:hover, .active & {
-			background: darken($c-gray, 10%);
+			border-bottom: solid 2px $c-theme-black;
 		}
 	}
 	&.active > a {
-		background: darken($c-gray, 10%);
+		border-bottom: solid 2px $c-theme-black;
 	}
 	&:last-of-type {
-		border-right: solid thin darken($c-gray, 10%);
+		border-right: solid 0px darken($c-theme-white, 10%);
 	}
 }
 
@@ -87,24 +88,24 @@
 		display: block;
 		line-height: 3rem;
 		height: 3rem;
-		background: $c-gray;
+		background: $c-theme-white;
 		text-align: center;
-		color: #fff;
+		color: $c-theme-black;
 		text-decoration: none;
-		font-weight: bold;
-		text-transform: uppercase;
+		font-weight: 300;
+		text-transform: lowercase;
 		letter-spacing: .1em;
-		border-left: solid thin darken($c-gray, 10%);
+		border-left: solid 0px darken($c-theme-white, 10%);
 
 		&:hover,  {
-			background: darken($c-gray, 10%);
+			border-bottom: solid 2px $c-theme-black;
 		}
 	}
 	&.active > a {
-		background: darken($c-gray, 10%);
+		border-bottom: solid 2px $c-theme-black;
 	}
 
 	&:last-of-type {
-		border-right: solid thin darken($c-gray, 10%);
+		border-right: solid 0px darken($c-theme-white, 10%);
 	}
 }
