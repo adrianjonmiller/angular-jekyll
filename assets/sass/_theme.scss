@@ -11,6 +11,10 @@
 	text-decoration: none;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	@media (max-width: 800px) {
+		display: block;
+		text-align: center;
+	}
 }
 
 #footer {
@@ -37,6 +41,9 @@
 	text-align: center;
 	line-height: 0;
 	margin-top: -$lineheight;
+	overflow: hidden;
+	max-height: 300px;
+	bottom: 0px;
 	> img {
 		display: inline-block;
 	}
@@ -52,6 +59,7 @@
 		text-transform: uppercase;
 		letter-spacing: .2em;
 		box-shadow: 0 0 2px rgba(black, 0.4);
+		display: none;
 	}
 }
 
@@ -72,6 +80,7 @@
 		border-left: solid 0px $c-light-tan;
 		&:hover, .active & {
 			border-bottom: solid 2px $c-theme-black;
+			font-style: italic;
 		}
 	}
 	&.active > a {
@@ -101,6 +110,7 @@
 
 		&:hover,  {
 			border-bottom: solid 2px $c-theme-black;
+			font-style: italic;
 		}
 	}
 	&.active > a {
