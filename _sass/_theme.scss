@@ -1,28 +1,53 @@
 #header {
-	background: $c-gray;
+	background: $c-theme-white;
 	z-index: 1000;
 }
 
 #logo {
-	color: #fff;
+	color: $c-theme-black;
+	font-weight: 600;
 	height: 3rem;
 	line-height: 3rem;
 	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	@media (max-width: 800px) {
+		display: block;
+		text-align: center;
+	}
 }
 
 #footer {
-	background: lightgray;
+	background: $c-light-tan;
 	padding: 30px;
+	display: none;
 }
 
-
+.unstyle {
+	padding: 0;
+	list-style: none;
+}
 
 [role="main"] {
 	margin-top: $lineheight;
+	display: block;
 }
+
 
 .splash {
 	position: relative;
+	width: 100%;
+	background: #333;
+	text-align: center;
+	line-height: 0;
+	margin-top: -$lineheight;
+	overflow: hidden;
+	max-height: 300px;
+	bottom: 0px;
+	> img {
+		display: inline-block;
+	}
+
 	.splash-heading {
 		padding: 2rem;
 		background: rgba(black, 0.6);
@@ -34,6 +59,7 @@
 		text-transform: uppercase;
 		letter-spacing: .2em;
 		box-shadow: 0 0 2px rgba(black, 0.4);
+		display: none;
 	}
 }
 
@@ -44,20 +70,24 @@
 		display: block;
 		line-height: 3rem;
 		height: 3rem;
-		background: $c-gray;
+		background: $c-theme-white;
 		text-align: center;
-		color: #fff;
+		color: $c-theme-black;
 		text-decoration: none;
-		font-weight: bold;
-		text-transform: uppercase;
+		font-weight: 300;
+		text-transform: lowercase;
 		letter-spacing: .1em;
-		border-left: solid thin darken($c-gray, 10%);
-		&:hover {
-			background: darken($c-gray, 10%);
+		border-left: solid 0px $c-light-tan;
+		&:hover, .active & {
+			border-bottom: solid 2px $c-theme-black;
+			font-style: italic;
 		}
 	}
+	&.active > a {
+		border-bottom: solid 2px $c-theme-black;
+	}
 	&:last-of-type {
-		border-right: solid thin darken($c-gray, 10%);
+		border-right: solid 0px darken($c-theme-white, 10%);
 	}
 }
 
@@ -69,21 +99,25 @@
 		display: block;
 		line-height: 3rem;
 		height: 3rem;
-		background: $c-gray;
+		background: $c-theme-white;
 		text-align: center;
-		color: #fff;
+		color: $c-theme-black;
 		text-decoration: none;
-		font-weight: bold;
-		text-transform: uppercase;
+		font-weight: 300;
+		text-transform: lowercase;
 		letter-spacing: .1em;
-		border-left: solid thin darken($c-gray, 10%);
+		border-left: solid 0px darken($c-theme-white, 10%);
 
-		&:hover {
-			background: darken($c-gray, 10%);
+		&:hover,  {
+			border-bottom: solid 2px $c-theme-black;
+			font-style: italic;
 		}
+	}
+	&.active > a {
+		border-bottom: solid 2px $c-theme-black;
 	}
 
 	&:last-of-type {
-		border-right: solid thin darken($c-gray, 10%);
+		border-right: solid 0px darken($c-theme-white, 10%);
 	}
 }
