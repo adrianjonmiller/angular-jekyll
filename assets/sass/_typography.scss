@@ -11,9 +11,14 @@
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
 p, span {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: $c-theme-black;
+	letter-spacing: .008em;
 }
 
 h1, h2, h3 {
@@ -26,9 +31,10 @@ h1, h2, h3 {
 	font-size: 5rem;
 	line-height: 1em;
 	&.page-title {
+		font-size: 7rem;
 		color: #FEF9F7;
-		margin-top: -20px;
-		margin-bottom: -20px;
+		margin-top: -25px;
+		margin-bottom: -15px;
 	}
 }
 .heading--l  {

@@ -23,6 +23,12 @@
 	display: none;
 }
 
+@media (max-width: 800px) {
+	.container {
+		margin: auto 12px;
+	}
+}
+
 .unstyle {
 	padding: 0;
 	list-style: none;
@@ -122,24 +128,42 @@
 	}
 }
 
-.about-img {
+.about-img-1, .about-img-2 {
 	display: none;
 }
 
-@media (min-width: 800px) {
-	.about-img {
-	display: inline-block;
-	max-width: 300px;
-	-webkit-filter: contrast(60%); 
-	opacity: 0.2;
-	z-index: -1;	
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	overflow-y: hidden;
-	.img-container {
-		max-width: 500px;
-		overflow-x: hidden;
+@media (min-width: 1000px) {
+	.about-img-1 {
+		display: inline-block;
+		max-width: 300px;
+		-webkit-filter: contrast(60%); 
+		opacity: 0.2;
+		z-index: -1;	
+		position: absolute;
+		top: -40px;
+		right: 50px;
+		overflow-y: hidden;
+	}
+	.about-img-2 {
+		display: inline-block;
+		max-width: 600px;
+		height: 300px;
+		-webkit-filter: contrast(60%); 
+		opacity: 0.15;
+		z-index: -1;	
+		position: absolute;
+		right: 30px;
+		margin-top: 300px;
+		overflow-y: hidden;
 	}
 }
+
+.about-resume {
+	max-width: 530px;
+	> ul{
+	margin-top: 7px;
+		> ul {
+			margin-top: 5px;
+		}
+	}
 }
