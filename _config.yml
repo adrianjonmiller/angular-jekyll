@@ -1,13 +1,11 @@
 # Site settings
-title: carly culver
+title: cc
 author: carly culver
 email: carlyeeculver@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Graphic and UI/UX Design works by Carly Culver
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://carlyculver.com" # the base hostname & protocol for your site
+url: "http://www.carlyculver.design" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 disqus_shortname: "demo_site"

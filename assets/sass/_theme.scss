@@ -121,3 +121,25 @@
 		border-right: solid 0px darken($c-theme-white, 10%);
 	}
 }
+
+.about-img {
+	display: none;
+}
+
+@media (min-width: 800px) {
+	.about-img {
+	display: inline-block;
+	max-width: 300px;
+	-webkit-filter: contrast(60%); 
+	opacity: 0.2;
+	z-index: -1;	
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	overflow-y: hidden;
+	.img-container {
+		max-width: 500px;
+		overflow-x: hidden;
+	}
+}
+}

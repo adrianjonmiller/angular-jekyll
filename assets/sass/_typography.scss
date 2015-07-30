@@ -17,17 +17,44 @@ p, span {
 }
 
 h1, h2, h3 {
-	font-family: 'Source Serif Pro', serif;
+	font-family: 'Source Sans Pro', serif;
 	color: $c-theme-black;
 }
 
 .heading--xl { 
 	@extend .font-serif;
-	font-size: 2.5rem;
+	font-size: 5rem;
 	line-height: 1em;
+	&.page-title {
+		color: #FEF9F7;
+		margin-top: -20px;
+		margin-bottom: -20px;
+	}
 }
-.heading--l  { font-size: 2.0rem; @extend .font-serif;}
-.heading--m  { font-size: 1.5rem; @extend .font-serif;}
-.heading--s  { font-size: 1.2rem; @extend .font-serif;}
-.heading--xs { font-size: 0.8rem; @extend .font-serif;}
+.heading--l  {
+	font-size: 2.0rem;
+	@extend .font-serif;
+}
+.heading--m  { 
+	font-size: 1.5rem;
+	@extend .font-san-serif;
+	&.thin {
+		font-weight: 300;
+	}
+}
+.heading--s  { font-size: 1.2rem; @extend .font-san-serif;}
+.heading--xs { font-size: 0.8rem; @extend .font-san-serif;}
 
+.about-resume {
+	>ul, li {
+		list-style-type: none;
+	}
+}
+
+a {
+	color: lighten($c-theme-black, 50%);
+	text-decoration: none;
+	&:hover {
+		border-bottom: $c-theme-black 1px solid;
+	}
+}
