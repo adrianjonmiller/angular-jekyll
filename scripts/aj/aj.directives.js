@@ -14,7 +14,7 @@ angular.module('aj.directives', [])
 		        _setPage($scope.current);
 		      }
 		    });
-		    
+
 
 		    $scope.paginate = function(index) {
 		      if (index <= $scope.pagination)
@@ -22,11 +22,11 @@ angular.module('aj.directives', [])
 		    }
 
 		    $scope.pageIndex = function(num) {
-		      var pages = []; 
+		      var pages = [];
 
-		      for (var i = 1; i <= num; i++) { 
-		          pages.push(i) 
-		      } 
+		      for (var i = 1; i <= num; i++) {
+		          pages.push(i)
+		      }
 
 		      return pages;
 		    }
@@ -59,7 +59,6 @@ angular.module('aj.directives', [])
 		    function _setPage(p) {
 		      $location.search('p', p);
 		    }
-		    
 		  }
 		}
 	})
@@ -71,7 +70,7 @@ angular.module('aj.directives', [])
 			controller: function(){
 		  	/* * * CONFIGURATION VARIABLES * * */
 		    var disqus_shortname = '50wordsaday';
-		    
+
 		    /* * * DON'T EDIT BELOW THIS LINE * * */
 		    (function() {
 		        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -81,4 +80,3 @@ angular.module('aj.directives', [])
 		  }
 		}
 	})
-	
